@@ -13,9 +13,10 @@ quiz.prototype.isEnded = () =>{
 };
 
 quiz.prototype.guess = answer =>{
-    this.questionIndex++;
-
+    
     if (this.getQuestionIndex().correctAnswer(answer)){
         this.score++;
     }
+    this.questionIndex++;
+
 };

@@ -59,3 +59,9 @@ outline: 0;
     font-size: 18px;
     font-family: sans-serif;
 }
+
+#score{
+    color: rgb(132, 243, 206);
+    text-align: center;
+    font-size: 30px;
+}
