@@ -1,22 +1,23 @@
-function quiz(question){
+function Quiz(question){
 this.score = 0;
 this.question = question;
 this.questionIndex = 0;
+
+Quiz.prototype.getQuestionIndex = () =>{
+    return this.questionIndex;
+    //return this.question[this.questionIndex];
 };
 
-quiz.prototype.getQuestionIndex = () =>{
-    return this.question (this.questionIndex);
-};
-
-quiz.prototype.isEnded = () =>{
+Quiz.prototype.isEnded = () =>{
     return this.question.length === this.questionIndex;
 };
 
-quiz.prototype.guess = answer =>{
+Quiz.prototype.guess = answer =>{
     
     if (this.getQuestionIndex().correctAnswer(answer)){
         this.score++;
     }
     this.questionIndex++;
-
+    
+};
 };

@@ -35,7 +35,7 @@ body{
     margin-top: 30px;
 }
 
-.btn0, .btn1, .btn2, .btn3 {
+#btn0, #btn1, #btn2, #btn3 {
     color: rgb(132, 243, 206);
     background-color: rgb(156, 148, 148);
     width: 250px;
@@ -46,11 +46,11 @@ body{
     padding: 10px 10px;
 }
 
-.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover{
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover{
 cursor: pointer;
 background-color:  rgb(114, 109, 109)
 } 
-.btn0:focus, .btn1:focus, .btn2:focus, .btn3:focus{
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus{
 outline: 0;
 }
 
