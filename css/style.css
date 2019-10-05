@@ -24,7 +24,7 @@ body{
     border-radius: 50px;
 }
 
-.grid .question{
+.grid #question{
     font-family: sans-serif;
     font-size: 30px;
     color: rgb(99, 99, 99);
@@ -54,7 +54,7 @@ background-color:  rgb(114, 109, 109)
 outline: 0;
 }
 
-.progress{
+#progress{
     color: rgb(99, 99, 99);
     font-size: 18px;
     font-family: sans-serif;

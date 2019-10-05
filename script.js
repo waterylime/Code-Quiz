@@ -33,6 +33,7 @@ let questions = [
 ];
 
 let myQuiz = new Quiz(questions);
+let myQuestion = new Question();
 
 populate = () =>{
     if (myQuiz.isEnded ()) {
@@ -41,25 +42,26 @@ populate = () =>{
     else {
 
         // show question
-        let element = document.getElementsByClassName('question');
-        element.innerHTML = myQuiz.getQuestionIndex().text;
+        let element = document.getElementById('question');
+        element.innerHTML = questions[myQuiz.getQuestionIndex()].title;
+        //element.innerHTML = questions[0].text;
 
         //show choices
 
         let choices = questions[myQuiz.getQuestionIndex()].choices;
-        console.log(choices)
+        // console.log(choices)
         for(var i = 0; i < choices.length; i++) {
-            console.log(choices[i])
+            // console.log(choices[i])
 
-            let element = document.getElementsByClassName ('choice' + i)
+            let element = document.getElementById('choice' + i)
             element.innerHTML = choices[i];
-            console.log(i)
+            // console.log(i)
             guess('btn' + i, choices[i]);
         };
 
         showProgress = () =>{
             let currentQuestionNumber = myQuiz.getQuestionIndex +1;
-            let element = document.getElementsByClassName('progress');
+            let element = document.getElementById('progress');
             element.innerHTML = 'question' +currentQuestionNumber + "of" + myQuiz.question.lenght;
 
         };

@@ -1,7 +1,7 @@
 
-const counter = document.getElementsByClassName ('counter');
+const counter = document.getElementById ('counter');
 
-const timerGauge= document.getElementsByClassName ('timerGaugeconst');
+const timerGauge= document.getElementById('timerGaugeconst');
 
 
 //var 
